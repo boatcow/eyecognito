@@ -1,0 +1,9 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px); /* Subtract navbar height */
+  text-align: center;
+  padding: 2rem;
+}
+
