@@ -23,7 +23,7 @@ const colors = [
 
 const DynamicTypewriter: React.FC<DynamicTypewriterProps> = ({
   messages,
-  typingSpeed = 50,
+  typingSpeed = 25,
   delayBeforeStart = 1000,
   delayAfterMessage = 2000,
 }) => {
@@ -36,7 +36,7 @@ const DynamicTypewriter: React.FC<DynamicTypewriterProps> = ({
   useEffect(() => {
     const cursorInterval = setInterval(() => {
       setShowCursor((prev) => !prev)
-    }, 530)
+    }, 200)
 
     return () => clearInterval(cursorInterval)
   }, [])
